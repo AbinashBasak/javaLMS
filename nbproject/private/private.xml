@@ -3,8 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/F:/java/project/lmsGit/src/com/lms/PayForm.java</file>
             <file>file:/F:/java/project/lmsGit/src/com/lms/StudentDashboard.java</file>
+=======
+            <file>file:/F:/java/project/lmsGit/src/com/lms/LoginUI.java</file>
+            <file>file:/F:/java/project/lmsGit/src/com/lms/SetMeeting.java</file>
+            <file>file:/F:/java/project/lmsGit/src/com/lms/MainUI.java</file>
+>>>>>>> cbcc28ee62198335e0af3a6c459f113a185a10a8
         </group>
     </open-files>
 </project-private>

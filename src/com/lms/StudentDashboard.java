@@ -32,7 +32,10 @@ public class StudentDashboard extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+<<<<<<< HEAD
         jComboBox1 = new javax.swing.JComboBox<>();
+=======
+>>>>>>> cbcc28ee62198335e0af3a6c459f113a185a10a8
         jPanel1 = new javax.swing.JPanel();
         sideBar = new javax.swing.JPanel();
         courseBar = new javax.swing.JPanel();
@@ -50,6 +53,7 @@ public class StudentDashboard extends javax.swing.JFrame {
         jTextField3 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
+<<<<<<< HEAD
         jPanel5 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -169,6 +173,13 @@ public class StudentDashboard extends javax.swing.JFrame {
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
+=======
+        feesContainer = new javax.swing.JPanel();
+        todoContainer = new javax.swing.JPanel();
+        cardContainer = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+
+>>>>>>> cbcc28ee62198335e0af3a6c459f113a185a10a8
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -358,7 +369,11 @@ public class StudentDashboard extends javax.swing.JFrame {
                 .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton1)
+<<<<<<< HEAD
                 .addContainerGap(322, Short.MAX_VALUE))
+=======
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> cbcc28ee62198335e0af3a6c459f113a185a10a8
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -377,6 +392,7 @@ public class StudentDashboard extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(230, 230, 230));
 
+<<<<<<< HEAD
         jPanel5.setBackground(new java.awt.Color(186, 206, 216));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -663,10 +679,13 @@ public class StudentDashboard extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+=======
+>>>>>>> cbcc28ee62198335e0af3a6c459f113a185a10a8
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(35, 35, 35)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -708,6 +727,13 @@ public class StudentDashboard extends javax.swing.JFrame {
                     .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(47, Short.MAX_VALUE))
+=======
+            .addGap(0, 797, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 543, Short.MAX_VALUE)
+>>>>>>> cbcc28ee62198335e0af3a6c459f113a185a10a8
         );
 
         javax.swing.GroupLayout courseContainerLayout = new javax.swing.GroupLayout(courseContainer);
@@ -727,6 +753,7 @@ public class StudentDashboard extends javax.swing.JFrame {
 
         container.add(courseContainer, "courseContainer");
 
+<<<<<<< HEAD
         feesContainer.setBackground(new java.awt.Color(245, 245, 245));
 
         preFeeContainer.setBackground(new java.awt.Color(255, 255, 255));
@@ -1108,11 +1135,15 @@ public class StudentDashboard extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
+=======
+        feesContainer.setBackground(new java.awt.Color(0, 51, 255));
+>>>>>>> cbcc28ee62198335e0af3a6c459f113a185a10a8
 
         javax.swing.GroupLayout feesContainerLayout = new javax.swing.GroupLayout(feesContainer);
         feesContainer.setLayout(feesContainerLayout);
         feesContainerLayout.setHorizontalGroup(
             feesContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(feesContainerLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(feesContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1128,10 +1159,18 @@ public class StudentDashboard extends javax.swing.JFrame {
                 .addGap(33, 33, 33)
                 .addComponent(dueFeeContainer1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(41, Short.MAX_VALUE))
+=======
+            .addGap(0, 797, Short.MAX_VALUE)
+        );
+        feesContainerLayout.setVerticalGroup(
+            feesContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 619, Short.MAX_VALUE)
+>>>>>>> cbcc28ee62198335e0af3a6c459f113a185a10a8
         );
 
         container.add(feesContainer, "feesContainer");
 
+<<<<<<< HEAD
         todoContainer.setBackground(new java.awt.Color(245, 245, 245));
 
         preFeeContainer1.setBackground(new java.awt.Color(255, 255, 255));
@@ -1518,11 +1557,15 @@ public class StudentDashboard extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
+=======
+        todoContainer.setBackground(new java.awt.Color(255, 153, 153));
+>>>>>>> cbcc28ee62198335e0af3a6c459f113a185a10a8
 
         javax.swing.GroupLayout todoContainerLayout = new javax.swing.GroupLayout(todoContainer);
         todoContainer.setLayout(todoContainerLayout);
         todoContainerLayout.setHorizontalGroup(
             todoContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(todoContainerLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(todoContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1538,6 +1581,13 @@ public class StudentDashboard extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
                 .addComponent(preFeeContainer2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
+=======
+            .addGap(0, 797, Short.MAX_VALUE)
+        );
+        todoContainerLayout.setVerticalGroup(
+            todoContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 619, Short.MAX_VALUE)
+>>>>>>> cbcc28ee62198335e0af3a6c459f113a185a10a8
         );
 
         container.add(todoContainer, "todoContainer");
@@ -1712,6 +1762,7 @@ public class StudentDashboard extends javax.swing.JFrame {
 
     
     
+<<<<<<< HEAD
     
     
     private void jLabel33MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel33MouseEntered
@@ -1743,6 +1794,8 @@ public class StudentDashboard extends javax.swing.JFrame {
     
     
     
+=======
+>>>>>>> cbcc28ee62198335e0af3a6c459f113a185a10a8
     private JPanel getPanel(String panelName){
         if(panelName.equalsIgnoreCase("courseBar")){
             return courseBar;
@@ -1816,6 +1869,7 @@ public class StudentDashboard extends javax.swing.JFrame {
     private javax.swing.JPanel container;
     private javax.swing.JPanel courseBar;
     private javax.swing.JPanel courseContainer;
+<<<<<<< HEAD
     private javax.swing.JPanel dueFeeContainer1;
     private javax.swing.JPanel feesBar;
     private javax.swing.JPanel feesContainer;
@@ -1942,6 +1996,21 @@ public class StudentDashboard extends javax.swing.JFrame {
     private javax.swing.JPanel pre_fee_7;
     private javax.swing.JPanel pre_fee_8;
     private javax.swing.JPanel pre_fee_9;
+=======
+    private javax.swing.JPanel feesBar;
+    private javax.swing.JPanel feesContainer;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JTextField jTextField3;
+>>>>>>> cbcc28ee62198335e0af3a6c459f113a185a10a8
     private javax.swing.JPanel sideBar;
     private javax.swing.JPanel todoBar;
     private javax.swing.JPanel todoContainer;
