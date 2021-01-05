@@ -90,6 +90,9 @@ public class PayForm extends javax.swing.JFrame {
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 payBtnMouseExited(evt);
             }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                payBtnMousePressed(evt);
+            }
         });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -154,6 +157,10 @@ public class PayForm extends javax.swing.JFrame {
     private void payBtnMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_payBtnMouseExited
       payBtn.setBackground(new Color(15,15,15));
     }//GEN-LAST:event_payBtnMouseExited
+
+    private void payBtnMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_payBtnMousePressed
+        dispose();
+    }//GEN-LAST:event_payBtnMousePressed
 
     /**
      * @param args the command line arguments
