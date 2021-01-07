@@ -8,6 +8,7 @@ package com.lms;
 import java.awt.CardLayout;
 import java.awt.Color;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 /**
@@ -38,8 +39,10 @@ public class TutorDashboardUI extends javax.swing.JFrame {
         sideBar = new javax.swing.JPanel();
         courseBar = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        feesBar = new javax.swing.JPanel();
+        submission = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
+        assignmentBar = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
         container = new javax.swing.JPanel();
         courseContainer = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
@@ -56,24 +59,28 @@ public class TutorDashboardUI extends javax.swing.JFrame {
         jLabel33 = new javax.swing.JLabel();
         jLabel85 = new javax.swing.JLabel();
         jLabel86 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         due_assignment_2 = new javax.swing.JPanel();
         jLabel34 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
         jLabel87 = new javax.swing.JLabel();
         jLabel88 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         due_assignment_3 = new javax.swing.JPanel();
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
         jLabel89 = new javax.swing.JLabel();
         jLabel90 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         due_assignment_4 = new javax.swing.JPanel();
         jLabel40 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
         jLabel91 = new javax.swing.JLabel();
         jLabel92 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         dueFeeContainer1 = new javax.swing.JPanel();
         jLabel43 = new javax.swing.JLabel();
         jPanel15 = new javax.swing.JPanel();
@@ -84,6 +91,7 @@ public class TutorDashboardUI extends javax.swing.JFrame {
         jLabel96 = new javax.swing.JLabel();
         jLabel97 = new javax.swing.JLabel();
         jCheckBox1 = new javax.swing.JCheckBox();
+        jLabel9 = new javax.swing.JLabel();
         due_assignment_6 = new javax.swing.JPanel();
         jLabel98 = new javax.swing.JLabel();
         jLabel99 = new javax.swing.JLabel();
@@ -91,6 +99,7 @@ public class TutorDashboardUI extends javax.swing.JFrame {
         jLabel101 = new javax.swing.JLabel();
         jLabel102 = new javax.swing.JLabel();
         jCheckBox2 = new javax.swing.JCheckBox();
+        jLabel10 = new javax.swing.JLabel();
         due_assignment_7 = new javax.swing.JPanel();
         jLabel103 = new javax.swing.JLabel();
         jLabel104 = new javax.swing.JLabel();
@@ -98,6 +107,7 @@ public class TutorDashboardUI extends javax.swing.JFrame {
         jLabel106 = new javax.swing.JLabel();
         jLabel107 = new javax.swing.JLabel();
         jCheckBox3 = new javax.swing.JCheckBox();
+        jLabel11 = new javax.swing.JLabel();
         due_assignment_8 = new javax.swing.JPanel();
         jLabel108 = new javax.swing.JLabel();
         jLabel109 = new javax.swing.JLabel();
@@ -105,7 +115,55 @@ public class TutorDashboardUI extends javax.swing.JFrame {
         jLabel111 = new javax.swing.JLabel();
         jLabel112 = new javax.swing.JLabel();
         jCheckBox4 = new javax.swing.JCheckBox();
+        jLabel12 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        assignmentContainer2 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        dueFeeContainer2 = new javax.swing.JPanel();
+        jLabel44 = new javax.swing.JLabel();
+        jPanel16 = new javax.swing.JPanel();
+        assignment_9 = new javax.swing.JPanel();
+        jLabel113 = new javax.swing.JLabel();
+        jLabel114 = new javax.swing.JLabel();
+        jLabel115 = new javax.swing.JLabel();
+        jLabel116 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel133 = new javax.swing.JLabel();
+        assignment_10 = new javax.swing.JPanel();
+        jLabel117 = new javax.swing.JLabel();
+        jLabel118 = new javax.swing.JLabel();
+        jLabel119 = new javax.swing.JLabel();
+        jLabel120 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel134 = new javax.swing.JLabel();
+        assignment_11 = new javax.swing.JPanel();
+        jLabel121 = new javax.swing.JLabel();
+        jLabel122 = new javax.swing.JLabel();
+        jLabel123 = new javax.swing.JLabel();
+        jLabel124 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel135 = new javax.swing.JLabel();
+        assignment_12 = new javax.swing.JPanel();
+        jLabel125 = new javax.swing.JLabel();
+        jLabel126 = new javax.swing.JLabel();
+        jLabel127 = new javax.swing.JLabel();
+        jLabel128 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel136 = new javax.swing.JLabel();
+        assignment_13 = new javax.swing.JPanel();
+        jLabel129 = new javax.swing.JLabel();
+        jLabel130 = new javax.swing.JLabel();
+        jLabel131 = new javax.swing.JLabel();
+        jLabel132 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel137 = new javax.swing.JLabel();
+        assignment_14 = new javax.swing.JPanel();
+        jLabel138 = new javax.swing.JLabel();
+        jLabel139 = new javax.swing.JLabel();
+        jLabel140 = new javax.swing.JLabel();
+        jLabel141 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel142 = new javax.swing.JLabel();
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -139,42 +197,73 @@ public class TutorDashboardUI extends javax.swing.JFrame {
             courseBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, courseBarLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         courseBarLayout.setVerticalGroup(
             courseBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
         );
 
-        feesBar.setBackground(new java.awt.Color(69, 87, 113));
-        feesBar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        feesBar.addMouseListener(new java.awt.event.MouseAdapter() {
+        submission.setBackground(new java.awt.Color(69, 87, 113));
+        submission.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        submission.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                feesBarMouseClicked(evt);
+                submissionMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                feesBarMouseEntered(evt);
+                submissionMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                feesBarMouseExited(evt);
+                submissionMouseExited(evt);
             }
         });
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Assignment");
+        jLabel4.setText("Submission");
 
-        javax.swing.GroupLayout feesBarLayout = new javax.swing.GroupLayout(feesBar);
-        feesBar.setLayout(feesBarLayout);
-        feesBarLayout.setHorizontalGroup(
-            feesBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, feesBarLayout.createSequentialGroup()
-                .addGap(0, 35, Short.MAX_VALUE)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))
+        javax.swing.GroupLayout submissionLayout = new javax.swing.GroupLayout(submission);
+        submission.setLayout(submissionLayout);
+        submissionLayout.setHorizontalGroup(
+            submissionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, submissionLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        feesBarLayout.setVerticalGroup(
-            feesBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        submissionLayout.setVerticalGroup(
+            submissionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
+        );
+
+        assignmentBar.setBackground(new java.awt.Color(69, 87, 113));
+        assignmentBar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        assignmentBar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                assignmentBarMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                assignmentBarMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                assignmentBarMouseExited(evt);
+            }
+        });
+
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("Assignment");
+
+        javax.swing.GroupLayout assignmentBarLayout = new javax.swing.GroupLayout(assignmentBar);
+        assignmentBar.setLayout(assignmentBarLayout);
+        assignmentBarLayout.setHorizontalGroup(
+            assignmentBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, assignmentBarLayout.createSequentialGroup()
+                .addGap(0, 19, Short.MAX_VALUE)
+                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        assignmentBarLayout.setVerticalGroup(
+            assignmentBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout sideBarLayout = new javax.swing.GroupLayout(sideBar);
@@ -182,7 +271,10 @@ public class TutorDashboardUI extends javax.swing.JFrame {
         sideBarLayout.setHorizontalGroup(
             sideBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(courseBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(feesBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(submission, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sideBarLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(assignmentBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         sideBarLayout.setVerticalGroup(
             sideBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -190,7 +282,9 @@ public class TutorDashboardUI extends javax.swing.JFrame {
                 .addGap(124, 124, 124)
                 .addComponent(courseBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(2, 2, 2)
-                .addComponent(feesBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(submission, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(2, 2, 2)
+                .addComponent(assignmentBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -244,7 +338,7 @@ public class TutorDashboardUI extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 785, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 810, Short.MAX_VALUE)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
@@ -253,11 +347,11 @@ public class TutorDashboardUI extends javax.swing.JFrame {
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(44, 44, 44)
+                .addGap(30, 30, 30)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(403, Short.MAX_VALUE))
+                .addContainerGap(417, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout courseContainerLayout = new javax.swing.GroupLayout(courseContainer);
@@ -304,6 +398,10 @@ public class TutorDashboardUI extends javax.swing.JFrame {
         jLabel86.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel86.setText("Roll-65");
 
+        jLabel3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("java");
+
         javax.swing.GroupLayout due_assignment_1Layout = new javax.swing.GroupLayout(due_assignment_1);
         due_assignment_1.setLayout(due_assignment_1Layout);
         due_assignment_1Layout.setHorizontalGroup(
@@ -316,8 +414,10 @@ public class TutorDashboardUI extends javax.swing.JFrame {
                 .addComponent(jLabel85, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel86, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(128, 128, 128)
-                .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE))
+                .addGap(31, 31, 31)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38)
+                .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         due_assignment_1Layout.setVerticalGroup(
             due_assignment_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -325,8 +425,9 @@ public class TutorDashboardUI extends javax.swing.JFrame {
                 .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(jLabel85, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
-                .addComponent(jLabel86, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jLabel85, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel86, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jLabel34.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -346,6 +447,10 @@ public class TutorDashboardUI extends javax.swing.JFrame {
         jLabel88.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel88.setText("Roll-61");
 
+        jLabel6.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("c++");
+
         javax.swing.GroupLayout due_assignment_2Layout = new javax.swing.GroupLayout(due_assignment_2);
         due_assignment_2.setLayout(due_assignment_2Layout);
         due_assignment_2Layout.setHorizontalGroup(
@@ -358,8 +463,10 @@ public class TutorDashboardUI extends javax.swing.JFrame {
                 .addComponent(jLabel87, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel88, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(128, 128, 128)
-                .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         due_assignment_2Layout.setVerticalGroup(
             due_assignment_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -367,8 +474,9 @@ public class TutorDashboardUI extends javax.swing.JFrame {
                 .addComponent(jLabel34, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(jLabel87, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
-                .addComponent(jLabel88, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jLabel87, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel88, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jLabel37.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -388,6 +496,10 @@ public class TutorDashboardUI extends javax.swing.JFrame {
         jLabel90.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel90.setText("Roll-66 ");
 
+        jLabel7.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("java");
+
         javax.swing.GroupLayout due_assignment_3Layout = new javax.swing.GroupLayout(due_assignment_3);
         due_assignment_3.setLayout(due_assignment_3Layout);
         due_assignment_3Layout.setHorizontalGroup(
@@ -400,8 +512,10 @@ public class TutorDashboardUI extends javax.swing.JFrame {
                 .addComponent(jLabel89, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel90, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(128, 128, 128)
-                .addComponent(jLabel39, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel39, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         due_assignment_3Layout.setVerticalGroup(
             due_assignment_3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -409,8 +523,9 @@ public class TutorDashboardUI extends javax.swing.JFrame {
                 .addComponent(jLabel37, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(jLabel89, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
-                .addComponent(jLabel90, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jLabel89, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel90, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jLabel40.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -430,6 +545,10 @@ public class TutorDashboardUI extends javax.swing.JFrame {
         jLabel92.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel92.setText("Roll-64 ");
 
+        jLabel8.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("C");
+
         javax.swing.GroupLayout due_assignment_4Layout = new javax.swing.GroupLayout(due_assignment_4);
         due_assignment_4.setLayout(due_assignment_4Layout);
         due_assignment_4Layout.setHorizontalGroup(
@@ -442,8 +561,10 @@ public class TutorDashboardUI extends javax.swing.JFrame {
                 .addComponent(jLabel91, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel92, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(128, 128, 128)
-                .addComponent(jLabel42, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel42, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         due_assignment_4Layout.setVerticalGroup(
             due_assignment_4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -453,6 +574,7 @@ public class TutorDashboardUI extends javax.swing.JFrame {
                 .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addComponent(jLabel91, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
                 .addComponent(jLabel92, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
@@ -532,6 +654,10 @@ public class TutorDashboardUI extends javax.swing.JFrame {
 
         jCheckBox1.setText("check");
 
+        jLabel9.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setText("Java");
+
         javax.swing.GroupLayout due_assignment_5Layout = new javax.swing.GroupLayout(due_assignment_5);
         due_assignment_5.setLayout(due_assignment_5Layout);
         due_assignment_5Layout.setHorizontalGroup(
@@ -545,9 +671,11 @@ public class TutorDashboardUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel97, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(43, 43, 43)
-                .addComponent(jLabel95, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE))
+                .addComponent(jCheckBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel95, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         due_assignment_5Layout.setVerticalGroup(
             due_assignment_5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -555,9 +683,10 @@ public class TutorDashboardUI extends javax.swing.JFrame {
                 .addComponent(jLabel93, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel94, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addComponent(jLabel95, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(jLabel96, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
+                .addComponent(jLabel96, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel97, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(jCheckBox1))
+                .addComponent(jCheckBox1)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jLabel98.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -584,6 +713,10 @@ public class TutorDashboardUI extends javax.swing.JFrame {
             }
         });
 
+        jLabel10.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel10.setText("C++");
+
         javax.swing.GroupLayout due_assignment_6Layout = new javax.swing.GroupLayout(due_assignment_6);
         due_assignment_6.setLayout(due_assignment_6Layout);
         due_assignment_6Layout.setHorizontalGroup(
@@ -597,9 +730,12 @@ public class TutorDashboardUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel102, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(43, 43, 43)
-                .addComponent(jLabel100, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE))
+                .addComponent(jCheckBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel100, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         due_assignment_6Layout.setVerticalGroup(
             due_assignment_6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -607,9 +743,10 @@ public class TutorDashboardUI extends javax.swing.JFrame {
                 .addComponent(jLabel98, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel99, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addComponent(jLabel100, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(jLabel101, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
+                .addComponent(jLabel101, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel102, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(jCheckBox2))
+                .addComponent(jCheckBox2)
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jLabel103.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -636,6 +773,10 @@ public class TutorDashboardUI extends javax.swing.JFrame {
 
         jCheckBox3.setText("check");
 
+        jLabel11.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel11.setText("Java");
+
         javax.swing.GroupLayout due_assignment_7Layout = new javax.swing.GroupLayout(due_assignment_7);
         due_assignment_7.setLayout(due_assignment_7Layout);
         due_assignment_7Layout.setHorizontalGroup(
@@ -649,9 +790,11 @@ public class TutorDashboardUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel107, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(43, 43, 43)
-                .addComponent(jLabel105, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE))
+                .addComponent(jCheckBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel105, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         due_assignment_7Layout.setVerticalGroup(
             due_assignment_7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -662,6 +805,7 @@ public class TutorDashboardUI extends javax.swing.JFrame {
                 .addComponent(jLabel106, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
                 .addComponent(jLabel107, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addComponent(jCheckBox3))
+            .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jLabel108.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -683,6 +827,10 @@ public class TutorDashboardUI extends javax.swing.JFrame {
 
         jCheckBox4.setText("check");
 
+        jLabel12.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel12.setText("Java");
+
         javax.swing.GroupLayout due_assignment_8Layout = new javax.swing.GroupLayout(due_assignment_8);
         due_assignment_8.setLayout(due_assignment_8Layout);
         due_assignment_8Layout.setHorizontalGroup(
@@ -696,9 +844,11 @@ public class TutorDashboardUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel112, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(43, 43, 43)
-                .addComponent(jLabel110, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE))
+                .addComponent(jCheckBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel110, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         due_assignment_8Layout.setVerticalGroup(
             due_assignment_8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -706,9 +856,10 @@ public class TutorDashboardUI extends javax.swing.JFrame {
                 .addComponent(jLabel108, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel109, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addComponent(jLabel110, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(jLabel111, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
+                .addComponent(jLabel111, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel112, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(jCheckBox4))
+                .addComponent(jCheckBox4)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
@@ -802,6 +953,513 @@ public class TutorDashboardUI extends javax.swing.JFrame {
 
         container.add(assignmentContainer, "feesContainer");
 
+        assignmentContainer2.setBackground(new java.awt.Color(255, 255, 255));
+        assignmentContainer2.setForeground(new java.awt.Color(255, 255, 255));
+
+        dueFeeContainer2.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel44.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel44.setText("Assignment list");
+
+        jPanel16.setBackground(new java.awt.Color(247, 247, 247));
+        jPanel16.setAutoscrolls(true);
+
+        jLabel113.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel113.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel113.setText("1");
+
+        jLabel114.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel114.setText("Java assignment 3 ");
+
+        jLabel115.setBackground(new java.awt.Color(255, 0, 0));
+        jLabel115.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jLabel115.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel115.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel115.setText("Delete");
+        jLabel115.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel115.setOpaque(true);
+        jLabel115.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel115MouseClicked(evt);
+            }
+        });
+
+        jLabel116.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel116.setText("CSE 3rd Year");
+
+        jLabel14.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel14.setText("Java");
+
+        jLabel133.setBackground(new java.awt.Color(0, 255, 0));
+        jLabel133.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jLabel133.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel133.setText("Update");
+        jLabel133.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel133.setOpaque(true);
+        jLabel133.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel133MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout assignment_9Layout = new javax.swing.GroupLayout(assignment_9);
+        assignment_9.setLayout(assignment_9Layout);
+        assignment_9Layout.setHorizontalGroup(
+            assignment_9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(assignment_9Layout.createSequentialGroup()
+                .addComponent(jLabel113, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel114, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel116, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel133, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel115, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        assignment_9Layout.setVerticalGroup(
+            assignment_9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(assignment_9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(jLabel113, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel114, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel115, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel116, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel133, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jLabel117.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel117.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel117.setText("2");
+
+        jLabel118.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel118.setText("Java assignment 2");
+
+        jLabel119.setBackground(new java.awt.Color(255, 0, 0));
+        jLabel119.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jLabel119.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel119.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel119.setText("Delete");
+        jLabel119.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel119.setOpaque(true);
+        jLabel119.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel119MouseClicked(evt);
+            }
+        });
+
+        jLabel120.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel120.setText("CSE 3rd Year");
+
+        jLabel15.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel15.setText("Java");
+
+        jLabel134.setBackground(new java.awt.Color(0, 255, 0));
+        jLabel134.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jLabel134.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel134.setText("Update");
+        jLabel134.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel134.setOpaque(true);
+        jLabel134.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel134MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout assignment_10Layout = new javax.swing.GroupLayout(assignment_10);
+        assignment_10.setLayout(assignment_10Layout);
+        assignment_10Layout.setHorizontalGroup(
+            assignment_10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(assignment_10Layout.createSequentialGroup()
+                .addComponent(jLabel117, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel118, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel120, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel134, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel119, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        assignment_10Layout.setVerticalGroup(
+            assignment_10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(assignment_10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(jLabel117, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel118, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel119, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel120, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel134, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jLabel121.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel121.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel121.setText("3");
+
+        jLabel122.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel122.setText("Java assignment 1 ");
+
+        jLabel123.setBackground(new java.awt.Color(255, 0, 0));
+        jLabel123.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jLabel123.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel123.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel123.setText("Delete");
+        jLabel123.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel123.setOpaque(true);
+        jLabel123.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel123MouseClicked(evt);
+            }
+        });
+
+        jLabel124.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel124.setText("CSE 3rd Year");
+
+        jLabel16.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel16.setText("Java");
+
+        jLabel135.setBackground(new java.awt.Color(0, 255, 0));
+        jLabel135.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jLabel135.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel135.setText("Update");
+        jLabel135.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel135.setOpaque(true);
+        jLabel135.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel135MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout assignment_11Layout = new javax.swing.GroupLayout(assignment_11);
+        assignment_11.setLayout(assignment_11Layout);
+        assignment_11Layout.setHorizontalGroup(
+            assignment_11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(assignment_11Layout.createSequentialGroup()
+                .addComponent(jLabel121, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel122, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel124, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel135, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel123, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        assignment_11Layout.setVerticalGroup(
+            assignment_11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(assignment_11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(jLabel121, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel122, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel123, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel124, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel135, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jLabel125.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel125.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel125.setText("4");
+
+        jLabel126.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel126.setText("C++ assignment 1 ");
+
+        jLabel127.setBackground(new java.awt.Color(255, 0, 0));
+        jLabel127.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jLabel127.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel127.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel127.setText("Delete");
+        jLabel127.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel127.setOpaque(true);
+        jLabel127.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel127MouseClicked(evt);
+            }
+        });
+
+        jLabel128.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel128.setText("CSE 3rd Year");
+
+        jLabel17.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel17.setText("C++");
+
+        jLabel136.setBackground(new java.awt.Color(0, 255, 0));
+        jLabel136.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jLabel136.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel136.setText("Update");
+        jLabel136.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel136.setOpaque(true);
+        jLabel136.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel136MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout assignment_12Layout = new javax.swing.GroupLayout(assignment_12);
+        assignment_12.setLayout(assignment_12Layout);
+        assignment_12Layout.setHorizontalGroup(
+            assignment_12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(assignment_12Layout.createSequentialGroup()
+                .addComponent(jLabel125, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel126, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel128, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel136, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel127, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        assignment_12Layout.setVerticalGroup(
+            assignment_12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(assignment_12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(jLabel125, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel126, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel127, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel128, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel136, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jLabel129.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel129.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel129.setText("5");
+
+        jLabel130.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel130.setText("C assignment 2 ");
+
+        jLabel131.setBackground(new java.awt.Color(255, 0, 0));
+        jLabel131.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jLabel131.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel131.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel131.setText("Delete");
+        jLabel131.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel131.setOpaque(true);
+        jLabel131.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel131MouseClicked(evt);
+            }
+        });
+
+        jLabel132.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel132.setText("CSE 3rd Year");
+
+        jLabel18.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel18.setText("C");
+
+        jLabel137.setBackground(new java.awt.Color(0, 255, 0));
+        jLabel137.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jLabel137.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel137.setText("Update");
+        jLabel137.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel137.setOpaque(true);
+        jLabel137.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel137MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout assignment_13Layout = new javax.swing.GroupLayout(assignment_13);
+        assignment_13.setLayout(assignment_13Layout);
+        assignment_13Layout.setHorizontalGroup(
+            assignment_13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(assignment_13Layout.createSequentialGroup()
+                .addComponent(jLabel129, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel130, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel132, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel137, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel131, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        assignment_13Layout.setVerticalGroup(
+            assignment_13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(assignment_13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(jLabel129, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel130, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel131, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel132, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel137, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jLabel138.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel138.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel138.setText("6");
+
+        jLabel139.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel139.setText("C assignment 1 ");
+
+        jLabel140.setBackground(new java.awt.Color(255, 0, 0));
+        jLabel140.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jLabel140.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel140.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel140.setText("Delete");
+        jLabel140.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel140.setOpaque(true);
+        jLabel140.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel140MouseClicked(evt);
+            }
+        });
+
+        jLabel141.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel141.setText("CSE 3rd Year");
+
+        jLabel19.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel19.setText("C");
+
+        jLabel142.setBackground(new java.awt.Color(0, 255, 0));
+        jLabel142.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jLabel142.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel142.setText("Update");
+        jLabel142.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel142.setOpaque(true);
+        jLabel142.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel142MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout assignment_14Layout = new javax.swing.GroupLayout(assignment_14);
+        assignment_14.setLayout(assignment_14Layout);
+        assignment_14Layout.setHorizontalGroup(
+            assignment_14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(assignment_14Layout.createSequentialGroup()
+                .addComponent(jLabel138, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel139, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel141, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel142, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel140, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        assignment_14Layout.setVerticalGroup(
+            assignment_14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(assignment_14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(jLabel138, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel139, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel140, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel141, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel142, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
+        jPanel16.setLayout(jPanel16Layout);
+        jPanel16Layout.setHorizontalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(assignment_9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(assignment_10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(assignment_11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(assignment_12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(assignment_13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(assignment_14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jPanel16Layout.setVerticalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addComponent(assignment_9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(assignment_10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(assignment_11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(assignment_12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(assignment_13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(assignment_14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 10, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout dueFeeContainer2Layout = new javax.swing.GroupLayout(dueFeeContainer2);
+        dueFeeContainer2.setLayout(dueFeeContainer2Layout);
+        dueFeeContainer2Layout.setHorizontalGroup(
+            dueFeeContainer2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dueFeeContainer2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(dueFeeContainer2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(dueFeeContainer2Layout.createSequentialGroup()
+                        .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 653, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        dueFeeContainer2Layout.setVerticalGroup(
+            dueFeeContainer2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dueFeeContainer2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 830, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(dueFeeContainer2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 608, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addComponent(dueFeeContainer2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 252, Short.MAX_VALUE)))
+        );
+
+        javax.swing.GroupLayout assignmentContainer2Layout = new javax.swing.GroupLayout(assignmentContainer2);
+        assignmentContainer2.setLayout(assignmentContainer2Layout);
+        assignmentContainer2Layout.setHorizontalGroup(
+            assignmentContainer2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        assignmentContainer2Layout.setVerticalGroup(
+            assignmentContainer2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        container.add(assignmentContainer2, "assignmentContainer2");
+        assignmentContainer2.getAccessibleContext().setAccessibleName("");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -809,7 +1467,7 @@ public class TutorDashboardUI extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(sideBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(container, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(container, javax.swing.GroupLayout.DEFAULT_SIZE, 830, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -849,19 +1507,19 @@ public class TutorDashboardUI extends javax.swing.JFrame {
         resetColor(courseBar);
     }//GEN-LAST:event_courseBarMouseExited
 
-    private void feesBarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_feesBarMouseEntered
+    private void submissionMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_submissionMouseEntered
         if(activeSideBar.equalsIgnoreCase("feesBar")){
             return;
         } 
-        setColor(feesBar);
-    }//GEN-LAST:event_feesBarMouseEntered
+        setColor(submission);
+    }//GEN-LAST:event_submissionMouseEntered
 
-    private void feesBarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_feesBarMouseExited
+    private void submissionMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_submissionMouseExited
         if(activeSideBar.equalsIgnoreCase("feesBar")){
             return;
         } 
-        resetColor(feesBar);
-    }//GEN-LAST:event_feesBarMouseExited
+        resetColor(submission);
+    }//GEN-LAST:event_submissionMouseExited
 
     
     
@@ -875,14 +1533,14 @@ public class TutorDashboardUI extends javax.swing.JFrame {
       cardLayout.show(container, "courseContainer");
     }//GEN-LAST:event_courseBarMouseClicked
 
-    private void feesBarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_feesBarMouseClicked
+    private void submissionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_submissionMouseClicked
        if(activeSideBar.equalsIgnoreCase("feesBar")){
             return;
         } 
       
       setActiveBar(activeSideBar,"feesBar");
       cardLayout.show(container, "feesContainer");
-    }//GEN-LAST:event_feesBarMouseClicked
+    }//GEN-LAST:event_submissionMouseClicked
 
     
     
@@ -914,6 +1572,84 @@ public class TutorDashboardUI extends javax.swing.JFrame {
         editor.setVisible(true);
     }//GEN-LAST:event_jLabel5MousePressed
 
+    private void assignmentBarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_assignmentBarMouseClicked
+        System.out.println(activeSideBar.equalsIgnoreCase("assignmentBar"));
+        if(activeSideBar.equalsIgnoreCase("assignmentBar")){
+            return;
+        } 
+      
+      setActiveBar(activeSideBar,"assignmentBar");
+      cardLayout.show(container, "assignmentContainer2");
+    }//GEN-LAST:event_assignmentBarMouseClicked
+
+    private void assignmentBarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_assignmentBarMouseEntered
+        if(activeSideBar.equalsIgnoreCase("assignmentContainer2")){
+            return;
+        } 
+        setColor(assignmentContainer2);
+    }//GEN-LAST:event_assignmentBarMouseEntered
+
+    private void assignmentBarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_assignmentBarMouseExited
+       if(activeSideBar.equalsIgnoreCase("assignmentContainer2")){
+            return;
+        } 
+        setColor(assignmentContainer2);
+    }//GEN-LAST:event_assignmentBarMouseExited
+
+    private void jLabel115MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel115MouseClicked
+                JOptionPane.showConfirmDialog(null, "Assignment deleted","Alert",JOptionPane.OK_OPTION);
+    }//GEN-LAST:event_jLabel115MouseClicked
+
+    private void jLabel133MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel133MouseClicked
+        EditorUI editor = new EditorUI("Update Assibnment", "Type Assignment description here","1. Write a Java Programme to swap two number.");
+        editor.setVisible(true);
+    }//GEN-LAST:event_jLabel133MouseClicked
+
+    private void jLabel134MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel134MouseClicked
+       EditorUI editor = new EditorUI("Update Assibnment", "Type Assignment description here","1. Write a Java Programme to implemment inheritance.");
+        editor.setVisible(true);
+    }//GEN-LAST:event_jLabel134MouseClicked
+
+    private void jLabel135MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel135MouseClicked
+        EditorUI editor = new EditorUI("Update Assibnment", "Type Assignment description here","1. Write a Java Programme to implemment private method.");
+        editor.setVisible(true);
+    }//GEN-LAST:event_jLabel135MouseClicked
+
+    private void jLabel136MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel136MouseClicked
+        EditorUI editor = new EditorUI("Update Assibnment", "Type Assignment description here","1. Write a C++ Programme to finde nth prime number.");
+        editor.setVisible(true);
+    }//GEN-LAST:event_jLabel136MouseClicked
+
+    private void jLabel137MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel137MouseClicked
+       EditorUI editor = new EditorUI("Update Assibnment", "Type Assignment description here","1. Write a C++ Programme to finde nth prime number.");
+        editor.setVisible(true);
+    }//GEN-LAST:event_jLabel137MouseClicked
+
+    private void jLabel142MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel142MouseClicked
+       EditorUI editor = new EditorUI("Update Assibnment", "Type Assignment description here","1. Write a C++ Programme to finde nth prime number.");
+        editor.setVisible(true);
+    }//GEN-LAST:event_jLabel142MouseClicked
+
+    private void jLabel119MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel119MouseClicked
+            JOptionPane.showConfirmDialog(null, "Assignment deleted","Alert",JOptionPane.OK_OPTION);
+    }//GEN-LAST:event_jLabel119MouseClicked
+
+    private void jLabel123MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel123MouseClicked
+             JOptionPane.showConfirmDialog(null, "Assignment deleted","Alert",JOptionPane.OK_OPTION);
+    }//GEN-LAST:event_jLabel123MouseClicked
+
+    private void jLabel127MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel127MouseClicked
+             JOptionPane.showConfirmDialog(null, "Assignment deleted","Alert",JOptionPane.OK_OPTION);
+    }//GEN-LAST:event_jLabel127MouseClicked
+
+    private void jLabel131MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel131MouseClicked
+            JOptionPane.showConfirmDialog(null, "Assignment deleted","Alert",JOptionPane.OK_OPTION);
+    }//GEN-LAST:event_jLabel131MouseClicked
+
+    private void jLabel140MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel140MouseClicked
+            JOptionPane.showConfirmDialog(null, "Assignment deleted","Alert",JOptionPane.OK_OPTION);
+    }//GEN-LAST:event_jLabel140MouseClicked
+
     
     private void saveFile(){
         JFileChooser file = new JFileChooser();
@@ -928,7 +1664,9 @@ public class TutorDashboardUI extends javax.swing.JFrame {
             return courseBar;
         } 
         else if(panelName.equalsIgnoreCase("feesBar")){
-            return feesBar;
+            return submission;
+        } else if(panelName.equalsIgnoreCase("assignmentBar")){
+            return assignmentBar;
         } 
         
         return new JPanel();
@@ -986,11 +1724,20 @@ public class TutorDashboardUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel assignmentBar;
     private javax.swing.JPanel assignmentContainer;
+    private javax.swing.JPanel assignmentContainer2;
+    private javax.swing.JPanel assignment_10;
+    private javax.swing.JPanel assignment_11;
+    private javax.swing.JPanel assignment_12;
+    private javax.swing.JPanel assignment_13;
+    private javax.swing.JPanel assignment_14;
+    private javax.swing.JPanel assignment_9;
     private javax.swing.JPanel container;
     private javax.swing.JPanel courseBar;
     private javax.swing.JPanel courseContainer;
     private javax.swing.JPanel dueFeeContainer1;
+    private javax.swing.JPanel dueFeeContainer2;
     private javax.swing.JPanel due_assignment_1;
     private javax.swing.JPanel due_assignment_2;
     private javax.swing.JPanel due_assignment_3;
@@ -999,13 +1746,13 @@ public class TutorDashboardUI extends javax.swing.JFrame {
     private javax.swing.JPanel due_assignment_6;
     private javax.swing.JPanel due_assignment_7;
     private javax.swing.JPanel due_assignment_8;
-    private javax.swing.JPanel feesBar;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JCheckBox jCheckBox3;
     private javax.swing.JCheckBox jCheckBox4;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel101;
     private javax.swing.JLabel jLabel102;
@@ -1016,10 +1763,50 @@ public class TutorDashboardUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel107;
     private javax.swing.JLabel jLabel108;
     private javax.swing.JLabel jLabel109;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel110;
     private javax.swing.JLabel jLabel111;
     private javax.swing.JLabel jLabel112;
+    private javax.swing.JLabel jLabel113;
+    private javax.swing.JLabel jLabel114;
+    private javax.swing.JLabel jLabel115;
+    private javax.swing.JLabel jLabel116;
+    private javax.swing.JLabel jLabel117;
+    private javax.swing.JLabel jLabel118;
+    private javax.swing.JLabel jLabel119;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel120;
+    private javax.swing.JLabel jLabel121;
+    private javax.swing.JLabel jLabel122;
+    private javax.swing.JLabel jLabel123;
+    private javax.swing.JLabel jLabel124;
+    private javax.swing.JLabel jLabel125;
+    private javax.swing.JLabel jLabel126;
+    private javax.swing.JLabel jLabel127;
+    private javax.swing.JLabel jLabel128;
+    private javax.swing.JLabel jLabel129;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel130;
+    private javax.swing.JLabel jLabel131;
+    private javax.swing.JLabel jLabel132;
+    private javax.swing.JLabel jLabel133;
+    private javax.swing.JLabel jLabel134;
+    private javax.swing.JLabel jLabel135;
+    private javax.swing.JLabel jLabel136;
+    private javax.swing.JLabel jLabel137;
+    private javax.swing.JLabel jLabel138;
+    private javax.swing.JLabel jLabel139;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel140;
+    private javax.swing.JLabel jLabel141;
+    private javax.swing.JLabel jLabel142;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
@@ -1035,12 +1822,17 @@ public class TutorDashboardUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel85;
     private javax.swing.JLabel jLabel86;
     private javax.swing.JLabel jLabel87;
     private javax.swing.JLabel jLabel88;
     private javax.swing.JLabel jLabel89;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel90;
     private javax.swing.JLabel jLabel91;
     private javax.swing.JLabel jLabel92;
@@ -1054,11 +1846,14 @@ public class TutorDashboardUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JPanel preFeeContainer;
     private javax.swing.JPanel sideBar;
+    private javax.swing.JPanel submission;
     // End of variables declaration//GEN-END:variables
     private String activeSideBar="courseBar";
     private CardLayout cardLayout;

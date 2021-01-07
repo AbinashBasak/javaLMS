@@ -25,13 +25,21 @@ public class EditorUI extends javax.swing.JFrame {
      * Creates new form EditorUI with params
      */
     public EditorUI(String title, String header) {
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setTitle(title);
         initComponents();
         setResizable(false);
         headerText.setText(header);
     }
 
+     public EditorUI(String title, String header, String text) {
+         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setTitle(title);
+        initComponents();
+        setResizable(false);
+        headerText.setText(header);
+        textArea1.setText(text);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -55,6 +63,8 @@ public class EditorUI extends javax.swing.JFrame {
         headerText.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         headerText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         headerText.setText("header ");
+
+        textArea1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         button1.setBackground(new java.awt.Color(0, 0, 51));
         button1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
