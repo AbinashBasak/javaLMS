@@ -5,6 +5,8 @@
  */
 package com.lms;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author abinash
@@ -127,6 +129,11 @@ public class LoginUI extends javax.swing.JFrame {
         jButton1.setBorder(null);
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -220,6 +227,24 @@ public class LoginUI extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        String password = jTextField4.getText();
+        String username=jTextField3.getText();
+        
+        if(username.equals("Tutor") && password.equals("tutor") && jComboBox1.getSelectedItem().toString().equalsIgnoreCase("Teacher")){
+            this.dispose();
+            TutorDashboardUI tutorUi = new TutorDashboardUI();
+            tutorUi.setVisible(true);
+        }
+        else if(username.equals("Alex") && password.equals("alex") && jComboBox1.getSelectedItem().toString().equalsIgnoreCase("Student")){
+            this.dispose();
+            StudentDashboard studetUi = new StudentDashboard();
+            studetUi.setVisible(true);
+        }else{
+            JOptionPane.showConfirmDialog(null, "Username or Password is wrong","Alert",JOptionPane.OK_OPTION);
+        }
+    }//GEN-LAST:event_jButton1MouseClicked
 
     /**
      * @param args the command line arguments
